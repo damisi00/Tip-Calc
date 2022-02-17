@@ -5,64 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="../public/output.css">
   <link rel="stylesheet" href="styles/tip.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center;  margin: 2rem auto;}
+    .attribution a { color: hsl(227, 19%, 18%); }
   </style>
 </head>
-<body>
-<main class=" bg-veryCyan-600 flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row">
-  <h3 class="header text-veryCyan-700">spli <br>tter</h3>
-  <section class="">
-    <div class="bg-white">
-      <h6 class=" text-veryCyan-600"> Bill</h6>
-      <div class="bg-veryCyan-300">
-        <img src="./images/icon-dollar.svg" class="faded">
-        <p class="text-veryCyan-700 font-bold">142.55</p>
+<body class="bg-veryCyan-300 h-auto lg:h-auto font-space">
+  <h3 class=" sm:my-10 text-veryCyan-700 my-5 mx-auto text-center font-semibold uppercase text-lg md:text-2xl">spli <br>tter</h3>
+<main class=" w-screen sm:w-3/4 sm: flex sm: items-center sm:justify-center sm:mx-auto">
+  <section class=" w-screen rounded-2xl bg-white flex flex-col sm:w-4/5 sm:flex-row ">
+  <div class="w-screen sm:w-2/4 flex flex-col justify-evenly p-2 sm:p-6">
+    <div class="w-11/12 mx-auto">
+      <h6 class=" text-veryCyan-600 py-2 "> Bill</h6>
+      <div class="bg-veryCyan-100 flex justify-between px-3 py-2 items-center rounded-sm">
+        <img src="../images/icon-dollar.svg" class="faded">
+        <p class="text-veryCyan-700 font-bold text-xl">142.55</p>
       </div>
     </div>
-    <div class="">
-      <h6 class="text-veryCyan-600"> Select Tip %</h6>
-      <div class="font-bold">
-        <div class="text-white bg-veryCyan-700">5%</div>
-        <div class="text-white bg-veryCyan-700">10%</div>
-        <div class="tip-turquoise">15%</div>
-        <div class="text-white bg-veryCyan-700">25%</div>
-        <div class="text-white bg-veryCyan-700">50%</div>
-        <div class="text-veryCyan-600 bg-veryCyan-300">Custom</div>
+    <div class="w-11/12 mx-auto">
+      <h6 class="text-veryCyan-600 pb-2 pt-4"> Select Tip %</h6>
+      <div class="font-bold grid grid-cols-2 gap-4  text-xl md:grid-cols-3">
+        <button type="button" class="btn text-white bg-veryCyan-700">5%</button>
+        <button type="button" class="btn text-white bg-veryCyan-700">10%</button>
+        <button type="button" class="btn text-veryCyan-700 bg-veryCyan-900">15%</button>
+        <button type="button" class="btn text-white bg-veryCyan-700">25%</button>
+        <button type="button" class="btn text-white bg-veryCyan-700">50%</button>
+        <button type="button"  class="btn text-veryCyan-600 bg-veryCyan-100">Custom</button>
       </div>
     </div>
-    <div class="">
-      <h6 class="text-veryCyan-600"> Number of People</h6>
-      <div class="bg-veryCyan-300">
-        <img src="./images/icon-person.svg" class="faded">
-        <p class="font-bold text-veryCyan-700">5</p>
+    <div class="w-11/12 mx-auto pb-4">
+      <h6 class="text-veryCyan-600 pb-2 pt-4"> Number of People</h6>
+      <div class="bg-veryCyan-100 flex justify-between px-3 py-2 items-center rounded-sm">
+        <img src="../images/icon-person.svg" class="faded">
+        <p class="text-veryCyan-700 font-bold text-xl">5</p>
       </div>
     </div>
-  </section>
-  <section class="bg-veryCyan-700">
-    <div class="tip-amt-container">
-      <div class="flex flex-col">
+  </div>
+  <!-- Second -->
+  <div class=" w-11/12 mx-auto sm:w-2/4   rounded-xl flex flex-col justify-around my-8 bg-veryCyan-700 m sm:mr-6 p-6">
+    <div class="tip-amt-container flex justify-between items-center">
+      <div class="flex flex-col pb-10">
         <p class="font-bold text-sm text-white"> Tip Amount</p>
         <p class="text-veryCyan-500 text-xs">/ person</p>
       </div>
-      <h4 class="font-bold text-2xl text-veryCyan-900">$4.27</h4>
+      <h4 class="font-bold text-3xl text-veryCyan-900">$4.27</h4>
     </div>
-    <div class="tip-amt-container">
+    <div class="tip-amt-container flex justify-between items-center">
       <div class="tip-amt">
         <p class="font-bold text-sm text-white"> Total</p>
         <p class="text-veryCyan-500 text-xs">/ person</p>
       </div>
-      <h4 class="font-bold text-2xl text-veryCyan-900">$32.79</h4>
+      <h4 class="font-bold text-3xl text-veryCyan-900">$32.79</h4>
     </div>
-    <div class="reset-btn">
-      <button type="reset" class="  uppercase bg-veryCyan-900 text-veryCyan-700 font-semibold">Reset</button>
+    <div class="reset-btn self-center w-full mt-12">
+      <button type="reset" class="rounded-sm py-2 w-full uppercase bg-veryCyan-900 text-veryCyan-700 font-semibold">Reset</button>
     </div>
+  </div>
   </section>
 </main>
  

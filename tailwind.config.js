@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      body: ['Space Mono', 'sans-serif'],
+     'space': [ 'monospace'],
     },
 
     extend: {
